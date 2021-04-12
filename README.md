@@ -14,8 +14,8 @@ License objects have the following fields:
 - `description` — A human-readable description of the license
 - `howToUse` — Instructions on how to implement the license
 - `note` — Additional information about the licenses
-- `isOsiApproved` — Whether this license is OSI approved.
-- `isFsfLibre` — Whether this license complies with [the definition of free software by the FSF](https://www.gnu.org/philosophy/free-sw.html.en).
+- `isOsiApproved` — Whether this license is OSI approved
+- `isFsfLibre` — Whether this license complies with [the definition of free software by the FSF](https://www.gnu.org/philosophy/free-sw.html.en)
 - `permissions` (array, see below)
 - `conditions` (array, see below)
 - `limitations` (array, see below)
@@ -61,7 +61,7 @@ All files are located in the [`data`](/data) directory.
 - `licenses/[id].txt` — The license text for `[id]`.
 - `licenses/[id].full.json` — The license object for `[id]`.
 
-They are served under `licenses.m0.is`.
+They are served under `https://licenses.m0.is`.
 
 Example: To access [data/licenses/0BSD.json](/data/licenses/0BSD.json), use `https://licenses.m0.is/licenses/0BSD.json`
 
