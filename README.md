@@ -20,13 +20,13 @@ License objects have the following fields:
 - `conditions` (array, see below)
 - `limitations` (array, see below)
 - `text` — The license text with `[placeholders]`:
-    - `[fullname]` - The full name or username of the copyright owner
-    - `[login]` - The copyright owner's username
-    - `[email]` - The copyright owner's primary email address
-    - `[project]` - The project name
-    - `[description]` - The description of the project
-    - `[year]` - The current year
-    - `[projecturl]` - The repository URL or other project website
+    - `[fullname]` — The full name or username of the copyright owner
+    - `[login]` — The copyright owner's username
+    - `[email]` — The copyright owner's primary email address
+    - `[project]` — The project name
+    - `[description]` — The description of the project
+    - `[year]` — The current year
+    - `[projecturl]` — The repository URL or other project website
 
 ### Permissions
 - `commercial-use` — The software and derivatives may be used for commercial purposes.
