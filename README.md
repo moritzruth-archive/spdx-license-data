@@ -29,11 +29,11 @@ License objects have the following fields:
     - `[projecturl]` - The repository URL or other project website
 
 ### Permissions
-- `commercial-use` — This software and derivatives may be used for commercial purposes.
-- `modifications` — This software may be modified.
-- `distribution` — This software may be distributed.
-- `private-use` — This software may be used and modified in private.
-- `patent-use` — This license provides an express grant of patent rights from contributors.
+- `commercial-use` — The software and derivatives may be used for commercial purposes.
+- `modifications` — The software may be modified.
+- `distribution` — The software may be distributed.
+- `private-use` — The software may be used and modified in private.
+- `patent-use` — The license provides an express grant of patent rights from contributors.
 
 ### Conditions
 - `include-copyright` — A copy of the license and copyright notice must be included with the software.
@@ -46,9 +46,9 @@ License objects have the following fields:
 - `same-license--library` — Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.
 
 ### Limitations
-- `trademark-use` — This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.
-- `liability` — This license includes a limitation of liability.
-- `patent-use` — This license explicitly states that it does NOT grant any rights in the patents of contributors.
+- `trademark-use` — The license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.
+- `liability` — The license includes a limitation of liability.
+- `patent-use` — The license explicitly states that it does NOT grant any rights in the patents of contributors.
 - `warranty` — The license explicitly states that it does NOT provide any warranty.
 
 ## Files
