@@ -1,0 +1,26 @@
+{
+  "name": "spdx-license-data",
+  "version": "0.2.0",
+  "main": "index.js",
+  "repository": "https://github.com/moritzruth/spdx-license-data.git",
+  "author": "Moritz Ruth <dev@moritzruth.de>",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "data"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./*": "./data/*"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^18.5.2",
+    "@types/fs-extra": "^9.0.10",
+    "@types/node": "^14.14.37",
+    "@types/node-fetch": "^2.5.10",
+    "fs-extra": "^9.1.0",
+    "gray-matter": "^4.0.2",
+    "node-fetch": "^2.6.1",
+    "np": "^7.4.0"
+  }
+}

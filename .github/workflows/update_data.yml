@@ -1,0 +1,49 @@
+name: Update data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  main:
+    name: Main
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          registry-url: "https://registry.npmjs.org"
+
+      - run: npm install
+      - run: node update-data.mjs
+
+      - name: Commit data changes
+        id: commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update data
+
+      - if: ${{ steps.commit.outputs.changes_detected == 'true' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./data
+          cname: licenses.m0.is
+
+      - name: Publish to NPM
+        if: ${{ steps.commit.outputs.changes_detected == 'true' }}
+        run: |
+          npm version minor --no-git-tag-version
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Commit version bump
+        if: ${{ steps.commit.outputs.changes_detected == 'true' }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Bump version
+
+
