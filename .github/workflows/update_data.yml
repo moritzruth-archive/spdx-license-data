@@ -30,7 +30,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./data
-          cname: licenses.m0.is
 
       - name: Publish to NPM
         if: ${{ steps.commit.outputs.changes_detected == 'true' }}
