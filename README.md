@@ -61,9 +61,9 @@ All files are located in the [`data`](/data) directory.
 - `licenses/[id].txt` — The license text for `[id]`.
 - `licenses/[id].full.json` — The license object for `[id]`.
 
-They are served under `https://moritzruth.github.io/spdx-license-data`.
+They are served under `https://license-data.moritzruth.de`.
 
-Example: To access [data/licenses/0BSD.json](/data/licenses/0BSD.json), use `https://moritzruth.github.io/spdx-license-data/licenses/0BSD.json`
+Example: To access [data/licenses/0BSD.json](/data/licenses/0BSD.json), use `https://license-data.moritzruth.de/licenses/0BSD.json`
 
 ### NPM
 ![npm](https://img.shields.io/npm/v/spdx-license-data?style=flat-square)
