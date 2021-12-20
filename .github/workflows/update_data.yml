@@ -30,6 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./data
+          cname: license-data.moritzruth.de
 
       - name: Publish to NPM
         if: ${{ steps.commit.outputs.changes_detected == 'true' }}
